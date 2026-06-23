@@ -1,0 +1,17 @@
+# Environment
+env/
+venv/
+__pycache__/
+*.pyc
+
+# Generated dataset
+data/
+screenshots/
+
+# Spark/PySpark
+spark-warehouse/
+metastore_db/
+*.log
+
+# OS files
+.DS_Store
