@@ -38,7 +38,7 @@ pipeline_1 = [
     {"$limit": 10}
 ]
 
-for i, r in enumerate(db.transactions.aggregate(pipeline_1), 1):
+for r in db.transactions.aggregate(pipeline_1):
     print(f"{r['name']} | ${r['total_revenue']:.2f} | Units: {r['total_units_sold']}")
 
 # Pipeline 2: Monthly Revenue by Category
